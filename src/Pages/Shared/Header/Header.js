@@ -26,6 +26,15 @@ const Header = () => {
                                 <Nav.Link style={{ color: 'black' }} as={Link} to="manage">Manage Items</Nav.Link>
                             }
                             {
+                                user &&
+                                <Nav.Link style={{ color: 'black' }} as={Link} to="add">Add Items</Nav.Link>
+                            }
+                            {
+                                user &&
+                                <Nav.Link style={{ color: 'black' }} as={Link} to="myitems">My Items</Nav.Link>
+                            }
+
+                            {
                                 user ?
                                     <Nav.Link style={{ color: 'black' }} as={Link} to="login" onClick={handleSignOut}>Sign Out</Nav.Link>
                                     :

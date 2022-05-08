@@ -1,0 +1,14 @@
+.delete-button {
+    border: 1px solid rgb(158, 44, 76);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(158, 44, 80);
+}
+
+.delete-button:hover {
+    border: 1px solid rgb(158, 44, 80);
+    background-color: white;
+    color: rgb(158, 44, 80);
+    ;
+}
