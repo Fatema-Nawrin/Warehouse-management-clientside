@@ -1,0 +1,33 @@
+.form {
+    width: 80%;
+    margin: auto
+}
+
+.form input {
+    margin: 1rem 0;
+    width: 80%;
+    padding-left: 1rem;
+    border: 1px solid lightslategray;
+    height: 45px;
+    border-radius: 0.5rem;
+}
+
+.submit-button {
+    color: white;
+    background-color: rgb(44, 158, 149);
+    font-size: 22px;
+}
+
+.submit-button:hover {
+    background-color: white;
+    border: 2px solid rgb(32, 129, 120);
+    color: rgb(44, 158, 149);
+}
+
+@media screen and (min-width: 1200px) {
+
+    .form {
+        width: 50%;
+        margin: auto
+    }
+}

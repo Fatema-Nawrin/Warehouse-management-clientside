@@ -1,0 +1,12 @@
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-nav {
+    font-size: 18px;
+}
+
+.header-nav a {
+    margin-left: 1rem;
+}
