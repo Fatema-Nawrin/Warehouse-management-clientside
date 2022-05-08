@@ -1,25 +1,37 @@
 .products-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
     justify-items: center;
+}
+
+.manage-button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(44, 158, 149);
+}
+
+.manage-button:hover {
+    border: 2px solid rgb(44, 158, 149);
+    background-color: white;
+    color: rgb(44, 158, 149);
 }
 
 @media screen and (max-width: 1200px) {
     .products-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1rem;
         justify-items: center;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
     .products-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 0.4rem;
         justify-items: center;
     }
 
@@ -29,9 +41,8 @@
     .products-container {
         display: grid;
         grid-template-columns: none;
-        gap: 2rem;
+        gap: 1rem;
         justify-items: center;
-
     }
 
 }

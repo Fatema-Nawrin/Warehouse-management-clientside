@@ -12,11 +12,11 @@ const Product = ({ product }) => {
         <div className='product col'>
             <img src={img} alt="" />
             <div className='product-info'>
-                <h3>{name}</h3>
+                <h5>{name}</h5>
                 <p>{description}</p>
-                <p>{price}</p>
-                <h4>{supplierName}</h4>
-                <button onClick={() => navigateToDetails(_id)}>Manage</button>
+                <p className='my-1'>Price:{price}</p>
+                <p>Supplier: {supplierName}</p>
+                <button className='manage-button' onClick={() => navigateToDetails(_id)}>Manage</button>
             </div>
         </div>
     );

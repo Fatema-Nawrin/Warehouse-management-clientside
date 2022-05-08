@@ -1,0 +1,12 @@
+.update-button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(44, 158, 149);
+}
+
+.qty-form input {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+}

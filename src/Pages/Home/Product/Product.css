@@ -1,12 +1,12 @@
 .product {
-    margin: 0.5rem;
-    width: 280px;
+    margin: 2rem 0.5rem;
+    width: 270px;
     border-radius: 1rem;
     box-shadow: 2px 2px 20px 10px #c6bfbf;
 }
 
 .product img {
-    width: 250px;
+    width: 240px;
     height: 300px;
     border-radius: 1rem;
     margin: 15px;
@@ -19,11 +19,12 @@
 @media screen and (min-width: 1200px) {
     .product {
         width: 350px;
+        margin-bottom: 2rem;
     }
 
     .product img {
         width: 320px;
-        height: 350px;
+        height: 330px;
     }
 
 }
