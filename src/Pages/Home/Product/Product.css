@@ -1,0 +1,29 @@
+.product {
+    margin: 0.5rem;
+    width: 280px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 20px 10px #c6bfbf;
+}
+
+.product img {
+    width: 250px;
+    height: 300px;
+    border-radius: 1rem;
+    margin: 15px;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .product {
+        width: 350px;
+    }
+
+    .product img {
+        width: 320px;
+        height: 350px;
+    }
+
+}
