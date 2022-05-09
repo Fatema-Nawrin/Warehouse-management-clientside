@@ -33,7 +33,7 @@ const MyItems = () => {
     }
     return (
         <div className='container' style={{ height: '100vh' }}>
-            <h2 className='text-center my-5'>Manage Inventory</h2>
+            <h2 className='text-center my-5'>My Items</h2>
             <Table responsive>
                 <thead>
                     <tr>

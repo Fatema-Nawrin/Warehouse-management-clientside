@@ -1,13 +1,13 @@
 .google-button {
     color: white;
-    background-color: rgb(141, 5, 71);
-    font-size: 20px;
-    border: none;
+    background-color: rgb(18, 24, 22);
+    font-size: 18px;
+    border: 2px solid rgb(18, 24, 22);
     border-radius: 0.5rem;
 }
 
 .google-button:hover {
     background-color: white;
-    border: 3px solid rgb(129, 32, 79);
-    color: rgb(130, 26, 76);
+    border: 2px solid rgb(18, 24, 22);
+    color: rgb(18, 24, 22);
 }
