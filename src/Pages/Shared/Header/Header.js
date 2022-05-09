@@ -21,6 +21,7 @@ const Header = () => {
                         <Nav className="me-auto header-nav">
                             <Nav.Link style={{ color: 'black' }} as={Link} to="home">Home</Nav.Link>
                             <Nav.Link style={{ color: 'black' }} as={Link} to="blog">Blogs</Nav.Link>
+                            <Nav.Link style={{ color: 'black' }} as={Link} to="faq">FAQ</Nav.Link>
                             {
                                 user &&
                                 <Nav.Link style={{ color: 'black' }} as={Link} to="manage">Manage Items</Nav.Link>
