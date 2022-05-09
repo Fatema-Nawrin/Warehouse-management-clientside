@@ -28,7 +28,7 @@ const AddItems = () => {
                     <input className='my-2 py-lg-2' placeholder='Product Name' {...register("name", { required: true, maxLength: 20 })} />
                     <textarea className='my-2' placeholder='Description' {...register("description")} />
                     <input className='my-2 py-lg-2' placeholder='Price' type="number" {...register("price")} />
-                    <input className='my-2 py-lg-2' placeholder='Quantity' type="number"{...register("quantity")} />
+                    <input className='my-2 py-lg-2' placeholder='Quantity' type="number"{...register("quantity", { required: true })} />
                     <input className='my-2 py-lg-2' placeholder='Image URL' type="text" {...register("img")} />
                     <input className='my-2 py-lg-2' placeholder='Supplier' type="text" {...register("supplierName")} />
                     <input className='manage-button my-2' type="submit" value="Add Item" />
