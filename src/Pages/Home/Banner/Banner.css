@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.bg-text {
+    color: rgb(22, 85, 61);
+    font-family: 'Montserrat';
+}

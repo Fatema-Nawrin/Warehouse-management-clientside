@@ -23,7 +23,7 @@ const Social = () => {
         </div>
     }
     return (
-        <div className='w-75 text-center'>
+        <div className='w-75 text-center mb-5'>
             <div className='d-flex align-items-center justify-content-center'>
                 <div style={{ height: '2px' }} className='bg-dark w-50'></div>
                 <p className='mt-3 px-1'> or </p>

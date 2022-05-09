@@ -24,7 +24,7 @@ const ManageProducts = () => {
     const increaseQuantity = (event) => {
         event.preventDefault();
         const addedValue = parseInt(event.target.quantity.value);
-        const newQuantity = quantity + addedValue;
+        const newQuantity = parseInt(quantity) + addedValue;
         if (newQuantity < 0) { }
         else {
             const updatedQuantity = { newQuantity }
@@ -45,7 +45,7 @@ const ManageProducts = () => {
     };
     // decrease quantity
     const decreaseQuantity = () => {
-        const newQuantity = quantity - 1;
+        const newQuantity = parseInt(quantity) - 1;
         if (newQuantity < 0) { }
         else {
             const updatedQuantity = { newQuantity }
