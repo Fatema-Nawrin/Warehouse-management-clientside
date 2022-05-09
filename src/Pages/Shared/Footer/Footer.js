@@ -8,7 +8,6 @@ const Footer = () => {
             <p className='pt-4'>All Rights Reserved, Wood Decor Warehouse. </p>
             <p><small>Copyright &copy; 2022</small></p>
 
-
         </div>
     );
 };

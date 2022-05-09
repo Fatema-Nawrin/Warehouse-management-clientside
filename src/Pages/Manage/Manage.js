@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import useProducts from '../../Hooks/useProducts';
 import './Manage.css'
 
@@ -14,14 +14,17 @@ const Manage = () => {
     }
 
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure about deleting this product?')
+        const proceed = window.confirm('Are you sure about deleting this product?');
+
         if (proceed) {
-            const url = `https://agile-lowlands-07365.herokuapp.com/product/${productId}`;
+            const url = `https://agile-lowlands-07365.herokuapp.com/product/${id}`;
+
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
+                    console.log('delete')
                     const remain = products.filter(product => product._id !== id);
                     setProducts(remain);
                 })
@@ -53,6 +56,11 @@ const Manage = () => {
                     }
                 </tbody>
             </Table>
+            <div className='text-center my-5'>
+                <Link to={'/add'}>
+                    <button className='manage-button'>Add New Items</button>
+                </Link>
+            </div>
 
         </div>
     );

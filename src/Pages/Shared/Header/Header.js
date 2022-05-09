@@ -31,7 +31,7 @@ const Header = () => {
                             }
                             {
                                 user &&
-                                <Nav.Link style={{ color: 'black' }} as={Link} to="myitems">My Items</Nav.Link>
+                                <Nav.Link style={{ color: 'black' }} as={Link} to="myproduct">My Items</Nav.Link>
                             }
 
                             {
