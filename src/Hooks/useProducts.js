@@ -6,7 +6,7 @@ const useProducts = () => {
         fetch('https://agile-lowlands-07365.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data));
-    })
+    }, [])
     return [products, setProducts]
 }
 export default useProducts;

@@ -3,14 +3,13 @@
 Live Site link [Wood Decor Warehouse](https://warehouse-management-2d0b5.web.app/).
 
 ## Functionality of the Website
-- It is a warehouse management website for furnitures
+- An inventory management responsive website,designed using CSS and react Bootstrap framework.
 - Products are managed by increasing or decreasing stock.
-- Items can be added by user.
-- User needs to be logged in to make changes.
+- Items can be added by logged in user.
 - Items added by user is shown separately.
-- Protected route function is added for stock mangement pages
-- Email/password and google authentication is included
+- Integrated these CRUD operations for user with Node.js and Express.js in the backend, and MongoDB database.
+- Included email/password and google authentication system and private routes for stock management pages with React Router and Firebase.
 
 ### Tech packages
-- React router, firebase, react-bootstrap, react-toastify, react firebase hooks etc
+- React router, firebase, react-bootstrap, react-toastify, react firebase hooks, chart.js etc.
 
