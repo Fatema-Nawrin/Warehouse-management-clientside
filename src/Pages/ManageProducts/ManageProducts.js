@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
     useEffect(() => {
-        const url = `https://agile-lowlands-07365.herokuapp.com/product/${productId}`;
+        const url = `https://warehouse-management-serverside-production.up.railway.app/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -14,7 +14,7 @@ const ManageProducts = () => {
 
     const [quantity, setQuantity] = useState();
     useEffect(() => {
-        const url = `https://agile-lowlands-07365.herokuapp.com/product/${productId}`;
+        const url = `https://warehouse-management-serverside-production.up.railway.app/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setQuantity(data.quantity));
@@ -28,7 +28,7 @@ const ManageProducts = () => {
         if (newQuantity < 0) { }
         else {
             const updatedQuantity = { newQuantity }
-            const url = `https://agile-lowlands-07365.herokuapp.com/product/${productId}`;
+            const url = `https://warehouse-management-serverside-production.up.railway.app/product/${productId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -49,7 +49,7 @@ const ManageProducts = () => {
         if (newQuantity < 0) { }
         else {
             const updatedQuantity = { newQuantity }
-            const url = `https://agile-lowlands-07365.herokuapp.com/product/${productId}`;
+            const url = `https://warehouse-management-serverside-production.up.railway.app/product/${productId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

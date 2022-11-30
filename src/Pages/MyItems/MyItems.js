@@ -9,7 +9,7 @@ const MyItems = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         const email = user?.email;
-        fetch(`https://agile-lowlands-07365.herokuapp.com/myproduct?email=${email}`)
+        fetch(`https://warehouse-management-serverside-production.up.railway.app/myproduct?email=${email}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -19,7 +19,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure about deleting this product?');
         if (proceed) {
-            const url = `https://agile-lowlands-07365.herokuapp.com/product/${id}`;
+            const url = `https://warehouse-management-serverside-production.up.railway.app/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

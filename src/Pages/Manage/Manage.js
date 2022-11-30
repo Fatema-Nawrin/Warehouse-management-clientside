@@ -17,7 +17,7 @@ const Manage = () => {
         const proceed = window.confirm('Are you sure about deleting this product?');
 
         if (proceed) {
-            const url = `https://agile-lowlands-07365.herokuapp.com/product/${id}`;
+            const url = `https://warehouse-management-serverside-production.up.railway.app/product/${id}`;
 
             fetch(url, {
                 method: 'DELETE'

@@ -8,7 +8,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `https://agile-lowlands-07365.herokuapp.com/product`;
+        const url = `https://warehouse-management-serverside-production.up.railway.app/product`;
         fetch(url, {
             method: 'POST',
             headers: {

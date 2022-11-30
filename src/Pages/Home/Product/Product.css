@@ -1,15 +1,13 @@
 .product {
     margin: 2rem 0.5rem;
     width: 270px;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 20px 10px #c6bfbf;
+    background-color: rgba(218, 215, 210, 0.14);
+    box-shadow: 3px 2px 12px 3.5px #e0ebeb;
 }
 
 .product img {
-    width: 240px;
+    width: 270px;
     height: 300px;
-    border-radius: 1rem;
-    margin: 15px;
 }
 
 .product-info {
@@ -23,7 +21,7 @@
     }
 
     .product img {
-        width: 320px;
+        width: 350px;
         height: 330px;
     }
 
